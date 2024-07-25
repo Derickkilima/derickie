@@ -1,0 +1,673 @@
+<DOCTYPE html>
+
+<html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==Title==================================-->
+    <title>
+
+        City Guide
+
+    </title>
+
+    <!--==Stylesheet=============================-->
+    <link rel="stylesheet" type="text/css" href="Home Page CSS.css">
+
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+
+    <!--==Using-Font-Awesome=====================-->
+    <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+
+    <script src = 'Home Page JS.js' defer></script>
+	    
+   <link rel="shortcut icon" type="image/jpg" href="C:\Users\hp\Desktop\College\First Semester\Introduction To Web Technologies\Notepad ++ Files\Project\favicon.ico"/>
+
+    </head>
+
+    <body>
+
+        <!--==Navigation================================-->
+        <nav class="navigation">
+
+            <!--logo-------->
+            <a href="#" class="logo">
+
+                <span>C</span>GS
+
+            </a>
+
+            <!--menu-btn---->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+
+            <label for="menu-btn" class="menu-icon">
+
+                <span class="nav-icon"></span>
+
+            </label>
+
+            <!--menu-------->
+            <ul class="menu">
+
+                <li>
+                    <a href="Home Page HTML.html" class="active">
+                        
+                        Home
+
+                    </a>
+                
+                </li>
+
+                <li>
+
+                    <a href="#category">
+
+                        Regions
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+
+                    <a href="#popular-bundle-pack">
+                        
+                        Landmarks
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+                    
+                    <a href="Contact Form HTML.html">
+                        
+                        Contact&nbsp;Us
+                    
+                    </a>
+                
+                </li>
+				
+				<li>
+                    
+                    <a href="Feedback Form HTML.html">
+                        
+                        Feedback
+                    
+                    </a>
+                
+                </li>
+				
+				<li>
+
+					<a href="About Us HTML.html">
+
+						About&nbsp;us
+
+					</a>
+
+                </li>
+
+                <li>
+                    
+                    <a href="Shopping Cart HTML.html">
+                        
+                        Bookings
+                    
+                    </a>
+                
+                </li>
+
+                <li>
+                    
+                    <a href="Login And Registration HTML.html">
+                            
+                        Sign&nbsp;up
+                        
+                    </a>
+                    
+                </li>
+
+				</ul>
+
+            <!--right-nav-(cart-like)-->
+            <div class="right-nav">
+                <!--cart----->
+                <a href="Profile HTML.html" class="user-profile">
+
+                    <i class="fas fa-user"></i>
+
+                    <span>
+
+                        1
+
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!--nav-end--------------------->
+        <!--==Search-banner=======================================-->
+        <section id="search-banner">
+
+            <!--bg--------->
+            <img alt="bg" class="bg-1" src="images/city-skyline-concept-illustration.png">
+
+            <img alt="bg" class="bg-1_rev" src="images/realistic-vector-icon-illustration-travel-time-design-concept-elements-with-luggage-hat-snork.png">
+
+            <img alt="bg-2" class="bg-2" src="images/happy-family-ready-travel-white-background.png">
+
+            <!--text------->
+            <div class="search-banner-text">
+
+                <h1>
+                    
+                    Welcome To Your Guide Around The City
+                
+                </h1>
+
+                <strong>
+                    
+                    #Free Transport
+                
+                </strong>
+
+                <!--search-box------>
+                <form action="" class="search-box">
+
+                    <!--icon------>
+                    <i class="fas fa-search"></i>
+
+                    <!--input----->
+                    <input type="text" class="search-input" placeholder="Search" name="search" size = "80px" required>
+
+                    <!--btn------->
+                    <input type="submit" class="search-btn" value="Search">
+
+                </form>
+
+                <br>
+
+                <h3>
+
+                    <a href = 'Best Deals HTML.html' style = 'color: #40aa54'>
+
+                        Click here to learn about today's tour offers
+
+                    </a>
+
+                </h3>
+
+            </div>
+
+        </section>
+
+        <!--search-banner-end--------------->
+
+        <h2 class = 'sale-heading'>
+
+            Countdown to next City Tour!
+
+        </h2>
+
+        <div class="countdown-container">
+
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>Days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>Hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>Min</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+        <!--==category=========================================-->
+        <section id="category">
+
+            <!--heading---------------->
+            <div class="category-heading">
+
+                <h2>
+                    
+                    Popular Regions
+                
+                </h2>
+
+                <span>
+                    
+                    All
+                
+                </span>
+
+            </div>
+
+            <!--box-container---------->
+            <div class="category-container">
+
+                <!--box---------------->
+                <a class="category-box" href = 'Fruits Category Page HTML.html'>
+					<img alt="dar es salaam" src="images/City Skyline Logo Vector Design Images, City Skylines Circle Badge Logo, Skylines, City, Circle Logo PNG Image For Free Download.jpeg">
+					<span>Dar Es Salaam</span>
+				</a>
+				<!--box---------------->
+                <a class="category-box" href = 'Medicine Category Page HTML.html'>
+                    <img alt="Medicines" src="images/Free Vector _ Linear flat buildings, skyscrapers, business center, offices and houses on water and sky background_ modern city, urban life concept_.jpeg">
+                    <span>Dodoma</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href="Baby Care Category Page HTML.html">
+                    <img alt="Baby Care Products" src="images/Mountain Circle Vector Art PNG, Mountain Circle, Nature Clipart, Natural Landscape, Mountain PNG Image For Free Download.jpeg">
+                    <span>Arusha</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Office Category Page HTML.html'>
+                    <img alt="Fish" src="images/Sydney Opera House.jpeg">
+                    <span>Mwanza</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Beauty Category Page HTML.html'>
+                    <img alt="Beauty Products" src="images/green city building with sunrise logo design vector graphic symbol icon sign illustration creative idea.jpeg">
+                    <span>Mbeya</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Gardening Category Page HTML.html'>
+                    <img alt="Gardening Products" src="images/Premium Vector _ Beach logo design template.jpeg">
+                    <span>Zanzibar</span>
+                </a>
+            </div>
+            
+        </section>
+        <!--category-end----------------------------------->
+        <!--==Products====================================-->
+        <section id="popular-product">
+            <!--heading----------->
+            <div class="product-heading">
+                <h3>Major Landmarks</h3>
+                <span>All</span>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Mount Kilimanjaro" data-price="USD 200" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvT3DIFsJ8QUFy_T1U7ATcu7WDDsjIeU1B3Q&s">
+                    <img alt="kili" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvT3DIFsJ8QUFy_T1U7ATcu7WDDsjIeU1B3Q&s">
+                    <strong>Mount Kilimanjaro</strong>
+                    <span class="quantity">location: Kilimanjaro</span>
+                    <span class="price">Adventure Site</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Travel
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Serengeti National Park" data-price="USD 200" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBryUenC5EXzP4Sp1j4rfk9mBWMFybOnmJg&s">
+                    <img alt="sere" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBryUenC5EXzP4Sp1j4rfk9mBWMFybOnmJg&s">
+                    <strong>Serengeti National Park</strong>
+                    <span class="quantity">location: Mara </span>
+                    <span class="price">Wildlife Reserve</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Travel
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Tarangire National Park" data-price="USD 200" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOcIlHH16ln2kcFNsac8SNh2rp3nxh4HpJA&s">
+                    <img alt="tarangire" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOcIlHH16ln2kcFNsac8SNh2rp3nxh4HpJA&s">
+                    <strong>Tarangire National Park</strong>
+                    <span class="quantity">location: Manyara</span>
+                    <span class="price">Wildlife Reserve</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Travel
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Ngorongoro National Park" data-price="USD 200" data-image="https://static.cloudsafaris.com/public/6948cd8f-6b79-4bb5-ac39-261b0d29c8af_loduare%20Gate.jpg?action=get&host=true">
+                    <img alt="Ngoro" src="https://static.cloudsafaris.com/public/6948cd8f-6b79-4bb5-ac39-261b0d29c8af_loduare%20Gate.jpg?action=get&host=true">
+                    <strong>Ngorongoro National Park</strong>
+                    <span class="quantity">location: Arusha</span>
+                    <span class="price">Conservation Area</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Travel
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Ruaha National Park" data-price="USD 200" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPkqPG2TDu5S_p2KaSr1yHQBLQAAJIBvyUg&s">
+                    <img alt="ruaha" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPkqPG2TDu5S_p2KaSr1yHQBLQAAJIBvyUg&s">
+                    <strong>Ruaha National Park</strong>
+                    <span class="quantity">locstion: Iringa</span>
+                    <span class="price">Wildlife Reserve</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Travel
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Zanzibar" data-price="USD 200" data-image="https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/29/294329.jpg">
+                    <img alt="zenji" src="https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/29/294329.jpg">
+                    <strong>Zanzibar</strong>
+                    <span class="quantity">location: Zanzibar</span>
+                    <span class="price">Historical site</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Travel
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--popular-product-end--------------------->
+        <!--Popular-bundle-pack===================================-->
+        <section id="popular-bundle-pack">
+            <!--heading-------------->
+            <div class="product-heading">
+                <h3>Hotel Reservations</h3>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Johari Rotana Hotel" data-price="USD 250" data-image="https://static.zawya.com/view/acePublic/alias/contentid/YjkzOWE0N2MtZmE2ZC00/0/joharirotananew-jpg.webp">
+                    <img alt="pack" src="https://static.zawya.com/view/acePublic/alias/contentid/YjkzOWE0N2MtZmE2ZC00/0/joharirotananew-jpg.webp">
+                    <strong>Johari Rotana Hotel</strong>
+                    <span class="quantity">Location: Dar Es Salaam</span>
+                    <span class="price">USD 250</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Now
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Morena Hotel" data-price="USD 200" data-image="https://media-cdn.tripadvisor.com/media/photo-s/0e/4d/9a/65/the-best.jpg">
+                    <img alt="morena" src="https://media-cdn.tripadvisor.com/media/photo-s/0e/4d/9a/65/the-best.jpg">
+                    <strong>Morena Hotel</strong>
+                    <span class="quantity">Location: Dodoma</span>
+                    <span class="price">USD 200</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Now
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="One Nature Nyarusigwa Hotel" data-price="USD 150" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipBmJJ_rQvqn0KuYVp7YZUJi6AptDksjIjA&s">
+                    <img alt="one necha" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipBmJJ_rQvqn0KuYVp7YZUJi6AptDksjIjA&s">
+                    <strong>One Nature Nyarusigwa Hotel</strong>
+                    <span class="quantity">Location: Arusha</span>
+                    <span class="price">USD 150</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Now
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Melia Hotels" data-price="USD 300" data-image="https://cf.bstatic.com/xdata/images/hotel/max1024x768/201737662.jpg?k=5bc38e63b8e61c4709709dda3b01f98f345272e9a801180c2e9399b6ccc228df&o=&hp=1">
+                    <img alt="melia" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/201737662.jpg?k=5bc38e63b8e61c4709709dda3b01f98f345272e9a801180c2e9399b6ccc228df&o=&hp=1">
+                    <strong>Melia Hotels</strong>
+                    <span class="quantity">Location: Zanzibar</span>
+                    <span class="price">USD 300</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Now
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box"style="height: 95%;" data-name="Mdope Idde Hotels" data-price=" USD 200" data-image="https://tanzaniahotelsagent.co.tz/wp-content/uploads/2022/09/IMG-20220914-WA0011.jpg">
+                    <img alt="mdope" src="https://tanzaniahotelsagent.co.tz/wp-content/uploads/2022/09/IMG-20220914-WA0011.jpg">
+                    <strong>Mdope Idde Hotels</strong>
+                    <span class="quantity">Location: Mbeya</span>
+                    <span class="price">USD 200</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Now
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box" style="height: 95%;" data-name="Malaika Beach Resort" data-price="USD 250" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqQEWDitX4E92gauXQcJ5BirQIO4dyPi0aeQ&s" >
+                    <img alt="malaika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqQEWDitX4E92gauXQcJ5BirQIO4dyPi0aeQ&s">
+                    <strong>Malaika Beach Resort</strong>
+                    <span class="quantity">Location: Mwanza</span>
+                    <span class="price">USD 250</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Book Now
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--popular-bundle-pack-end-------------------------------->
+        <!--==Clients===============================================-->
+        <section id="clients">
+            <!--heading---------------->
+            <div class="client-heading">
+                <h3>What Our Clients Say</h3>
+            </div>
+            <!--box-container---------->
+            <div class="client-box-container">
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/FNVH9z6.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Derick Kilima</strong>
+                            <span>Traveler</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>"I recently used City Guide for my family vacation, and it was the best decision ever! The app made planning our trip so easy and stress-free. From booking flights to finding the perfect hotel, everything was seamless. The customer service was outstanding, they were always ready to help with any questions we had. I highly recommend City Guide for anyone looking to have a memorable and hassle-free travel experience!"</Str></p>
+                </div>
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/3yv9Hkj.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Ellen White</strong>
+                            <span>Fashion Model</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>"Traveling to a new destination can be daunting, but City Guide made it an enjoyable adventure. The app's user-friendly interface and comprehensive features allowed me to discover amazing local attractions and activities that I wouldn't have found otherwise. The personalized recommendations were spot on, and the support team was incredibly responsive and helpful. Thanks to City Guide, my trip was filled with unforgettable moments. I can't wait to use it again for my next journey!"</p>
+                </div>
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/Rk5RDey.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Aubrey Graham</strong>
+                            <span>Artist</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>"As a frequent traveler, I've tried numerous travel apps, but City Guide stands out from the rest. The app provides detailed information and reviews, making it easy to plan and book everything in one place. The guided tours and experiences suggested by the app were fantastic and exceeded my expectations. The customer service was exceptional they went above and beyond to ensure my trip was perfect. I wholeheartedly recommend City Guide to anyone looking for a reliable and comprehensive travel companion."</p>
+                </div>
+            </div>
+        </section>
+        <!--client-section-end---------->
+        <!--==Partnre-logo================================-->
+        <section id="partner">
+            <!--heading------------>
+            <div class="partner-heading">
+                <h3>Our Trusted Partner</h3>
+            </div>
+            <!--logo-container----->
+            <div class="logo-container">
+                <img alt="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd6LTiIypm_v1-4c-n4UFd7CJdOVaKMfZjnA&s">
+                <img alt="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRT54lgj2HLC6VzVIXeFsfK3A_6gixfRDUXg&s">
+                <img alt="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQleyFb-qEoiLii6myB0zzjDERyCYneExsveQ&s">
+                <img alt="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaSIn8-8eEZb7SPRIcymvLiBM91VxCpb71A&s">
+                <img alt="logo" src="https://play-lh.googleusercontent.com/2-K2s0rR4ERn__C4Pl0x-K7oG4QiFlZpKIIWUT4_y0rnm9YmMo8041_tLIsI0fReo-k">
+            </div>
+        </section>
+        <!--logo-section-end--------------------->
+        <!--==download-app====================================-->
+        <section id="download-app">
+            <!--img----------------------->
+            <div class="app-img">
+                <img alt="app" src="https://www.sstechsystem.com/wp-content/uploads/2021/04/Travel-Tourism-Main.png">
+            </div>
+            <!--text---------------------->
+            <div class="download-app-text">
+                <strong>Download App</strong>
+                <p>Travelling made easier. Now, you don't need to open the website for Booking Hotels. Download the <b>City Guide</b> app from Play Store and App Store to start travelling easily and faster. <br> HAPPY TRAVELS!</b></p>
+                <!--btns------->
+                <div class="download-btns">
+                    <a href="https://www.apple.com/in/app-store/"><img alt="" src="https://i.imgur.com/dMsRGJH.png"></a>
+                    <a href="https://play.google.com/store"><img alt="" src="https://i.imgur.com/puDrZNe.png"></a>
+                </div>
+            </div>
+        </section>
+        <!--download-app-section-end------------------------->
+        <!--==Footer=============================================-->
+        <footer>
+            <div class="footer-container">
+                <!--logo-container------>
+                <div class="footer-logo">
+                    <a href="file:///C:/Users/RAGHAV/Desktop/Coding/Grocery/Logo.png"><span>C</span>GS</a>
+                    <!--social----->
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+             
+           
+            <!--links-------------------------->
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone : +255785301158</a></li>
+                    <li><a href="#">Email : cityguide@gmail.com</a></li>
+                    <li><a href="#">Cities we serve</a></li>
+                </ul>
+				<br><p style="color: aliceblue;">Copyright ©2024 | All Rights Reserved</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartButtons = document.querySelectorAll('.cart-btn');
+
+            cartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const productBox = e.target.closest('.product-box');
+                    const product = {
+                        name: productBox.getAttribute('data-name'),
+                        price: productBox.getAttribute('data-price'),
+                        image: productBox.getAttribute('data-image'),
+                        quantity: 1
+                    };
+
+                    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                    const existingItem = cartItems.find(item => item.name === product.name);
+
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cartItems.push(product);
+                    }
+
+                    localStorage.setItem('cart', JSON.stringify(cartItems));
+                    alert('Item added to cart!');
+                });
+            });
+        });
+    </script>
+</html>

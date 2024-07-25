@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookings Cart</title>
+    <link rel="stylesheet" type="text/css" href="Shopping Cart CSS.css">
+    <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bookings</h1>
+        <div class="cart">
+            <div class="products" id="products-list">
+                <!-- Products will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <p>
+                    <span>Total Price</span>
+                    <span id="total-price">USD 0</span>
+                </p>
+                <p>
+                    <span>No. of Items</span>
+                    <span id="item-count">0</span>
+                </p>
+                <p>
+                    <span>You Save</span>
+                    <span id="you-save">Rs. 0</span>
+                </p>
+                <a href="Details For Checkout HTML.html">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productsList = document.getElementById('products-list');
+            const totalPriceElement = document.getElementById('total-price');
+            const itemCountElement = document.getElementById('item-count');
+            const youSaveElement = document.getElementById('you-save');
+
+            function loadCart() {
+                const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                let totalPrice = 0;
+                let itemCount = 0;
+                let totalSavings = 0;
+
+                cartItems.forEach(item => {
+                    const productElement = document.createElement('div');
+                    productElement.classList.add('product');
+                    productElement.setAttribute('data-price', item.price);
+
+                    productElement.innerHTML = `
+                        <img src="${item.image}">
+                        <div class="product-info">
+                            <h3 class="product-name">${item.name}</h3>
+                            <h4 class="product-price">${item.price}</h4>
+                            <p class="product-quantity">Qnt: <input value="${item.quantity}" name=""></p>
+                            <p class="product-remove"><i class="fas fa-trash-alt"></i><span class="remove">Remove</span></p>
+                        </div>
+                    `;
+
+                    productsList.appendChild(productElement);
+
+                    totalPrice += item.quantity;
+                    itemCount += item.quantity;
+                });
+
+                totalPriceElement.textContent = `USD ${totalPrice}`;
+                itemCountElement.textContent = itemCount;
+                youSaveElement.textContent = `Rs. ${totalSavings}`;
+
+                // Add remove functionality
+                document.querySelectorAll('.remove').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const productElement = e.target.closest('.product');
+                        const productName = productElement.querySelector('.product-name').textContent;
+                        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                        cartItems = cartItems.filter(item => item.name !== productName);
+                        localStorage.setItem('cart', JSON.stringify(cartItems));
+                        productElement.remove();
+                        loadCart(); // Reload to update totals
+                    });
+                });
+            }
+
+            loadCart();
+        });
+    </script>
+</body>
+
+</html>
